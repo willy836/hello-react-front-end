@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Rails Back End Link ](#back-end)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -51,6 +52,14 @@
 
 - **[React Front-end]**
 - **[Fetch data from Rails API]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Back end -->
+
+## 🚀 Rails Back End Link <a name="live-demo"></a>
+
+- [Rails app link](https://github.com/willy836/hello-rails-back-end.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

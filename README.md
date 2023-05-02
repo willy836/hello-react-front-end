@@ -96,6 +96,7 @@ Install this project with:
 To run the project, execute the following command:
 
 - npm run start
+- run rails server on port 3001
 
 <!-- AUTHORS -->
 

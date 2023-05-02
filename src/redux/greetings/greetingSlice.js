@@ -1,22 +1,22 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchGreeting = createAsyncThunk(
-  "greeting/fetchGreeting",
+  'greeting/fetchGreeting',
   async () => {
-    const response = await fetch("http://127.0.0.1:3001/api/v1/greetings");
+    const response = await fetch('http://127.0.0.1:3001/api/v1/greetings');
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 const initialState = {
   loading: false,
-  greeting: "",
-  error: "",
+  greeting: '',
+  error: '',
 };
 
 export const greetingSlice = createSlice({
-  name: "greeting",
+  name: 'greeting',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -33,7 +33,7 @@ export const greetingSlice = createSlice({
       return newState;
     });
     builder.addCase(fetchGreeting.rejected, (state) => {
-      const newState = { ...state, loading: false, error: "404 Not Found" };
+      const newState = { ...state, loading: false, error: '404 Not Found' };
       return newState;
     });
   },
